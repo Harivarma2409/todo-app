@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Todo App – Next.js (App Router)
 
-## Getting Started
+A modern *Todo Application* built using *Next.js (App Router)* with List View and Calendar View support.
 
-First, run the development server:
+This application allows users to *Add, Edit, Delete, and Manage tasks* efficiently.  
+Tasks are stored in *LocalStorage*, so data persists even after refreshing the browser.
+
+---
+
+## 🚀 What This Project Is For
+
+This project is a productivity-based Todo Management System that helps users:
+
+- Organize daily tasks
+- View tasks in List format
+- View tasks in Calendar format
+- Edit tasks directly from calendar view
+- Persist data using LocalStorage (No backend required)
+
+---
+
+## ✨ Features
+
+### ✅ Task Management
+- Add new tasks
+- Edit existing tasks
+- Delete tasks
+- Update task details
+
+### 📋 List View
+- Displays all tasks in a structured list
+- Easy edit & delete options
+- Can mark as **Completed** once the Task is Complete
+
+### 📅 Calendar View
+- View tasks by selected date
+- Add tasks to specific dates
+- Edit tasks directly from calendar
+- Visual task tracking by day
+
+### 💾 Local Storage Support
+- All tasks are saved in *LocalStorage*
+- Data remains after refresh
+- No database required
+
+---
+
+## 🛠 Tech Stack
+
+- *Next.js (App Router)*
+- *React*
+- *TypeScript*
+- *React Context API*
+- *LocalStorage*
+- *react-calendar*
+- *xlsx* (for Excel export support)
+- *CSS*
+
+---
+
+## 📦 Required Libraries
+
+If you don’t have these installed, run:
+
+```bash
+npm install xlsx
+```
+```bash
+npm install react-calendar
+```
+
+## ❗ If You Face Any Issues
+
+If you encounter dependency errors or the project is not running properly, follow these steps:
+
+### Step 1: Delete the following folders/files
+
+- .next
+- node_modules
+- package-lock.json
+
+### Step 2: Reinstall dependencies
+
+```bash
+npm install
+```
+
+### Step 3: Run the project again
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
